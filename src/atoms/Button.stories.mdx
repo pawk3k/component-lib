@@ -1,0 +1,16 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { Button } from './Button';
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+export const ManagedButton = (args) => {
+  return (
+    <Button {...args}/>
+  );
+};
+
+<Story name="Default">
+  { ManagedButton.bind({}) }
+</Story>

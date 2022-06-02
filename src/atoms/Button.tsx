@@ -43,6 +43,6 @@ export const Button = ({
       {...props}
     >
       {label}
-    </button>
+        </button>
   );
 };
