@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build-storybook",
+    "predeploy-storybook": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
     "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly",
     "preview": "vite preview",
