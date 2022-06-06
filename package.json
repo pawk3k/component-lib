@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --watch -d --declarationDir lib --declarationMap --emitDeclarationOnly && vite build",
+    "build": "tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "create-component": "./create-component.sh",
