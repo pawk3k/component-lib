@@ -4,13 +4,15 @@
   "homepage": "http://pawk3k.github.io/pavlos-component-lib",
   "version": "0.0.0",
   "scripts": {
+    "dev": "vite",
     "predeploy-storybook": "npm run build-storybook -o docs",
     "deploy-storybook": "gh-pages -d docs",
     "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && storybook-to-ghpages --out docs-build --dry-run",
+    "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "create-component": "./create-component.sh",
     "semantic-release": "semantic-release",
-    "static-storybook": "start-storybook -s docs-build -p 6008"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "^18.0.0",
