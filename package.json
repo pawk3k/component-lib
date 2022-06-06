@@ -1,5 +1,6 @@
 {
   "name": "pavlos-component-lib",
+  "main": "./lib/src/index.js",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
