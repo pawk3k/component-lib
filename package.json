@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && vite build",
+    "build": "tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "create-component": "./create-component.sh",
@@ -47,5 +47,11 @@
   "author": "Pavlo Ravliv <pawk3k@users.noreply.github.com> (https://github.com/ryansonshine)",
   "engines": {
     "node": ">=12.0"
-  }
+  },
+  "files": [
+    "/lib/**/*",
+    "/assets",
+    "/fonts",
+    "/native"
+  ]
 }
