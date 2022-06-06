@@ -28,7 +28,9 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: storybook-static # The folder the action should deploy.
+          CLEAN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_FOLDER: storybook-static
 
       - name: Release
         env:
