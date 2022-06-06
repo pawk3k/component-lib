@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 lib/
 storybook-static/
+docs-build/

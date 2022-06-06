@@ -38,6 +38,7 @@ export const Button = ({
   return (
     <button
       type="button"
+      aria-multiline="false"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
