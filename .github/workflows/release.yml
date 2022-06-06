@@ -1,4 +1,8 @@
+
 name: Release
+
+permissions: write
+
 on:
   push:
     branches:
@@ -20,6 +24,11 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Deploy storybook 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: master # The branch the action should deploy to.
+          folder: docs # The folder the action should deploy.
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
