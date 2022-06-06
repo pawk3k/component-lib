@@ -31,7 +31,7 @@ export const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
-  label = 'submit',
+  label = 'submit1',
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
