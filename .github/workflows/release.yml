@@ -1,7 +1,9 @@
 
 name: Release
 
-permissions: write
+permissions: 
+  contents: write
+
 
 on:
   push:
