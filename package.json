@@ -8,7 +8,7 @@
     "predeploy-storybook": "npm run build-storybook -o docs",
     "deploy-storybook": "gh-pages -d docs",
     "build-storybook:prod": "build-storybook -o docs",
-    "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && build-storybook -o docs",
+    "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && build-storybook -o docs-build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "create-component": "./create-component.sh",
