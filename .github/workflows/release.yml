@@ -26,8 +26,8 @@ jobs:
       - name: Deploy storybook 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branch: master # The branch the action should deploy to.
-          folder: docs # The folder the action should deploy.
+          branch: gh-pages # The branch the action should deploy to.
+          folder: storybook-static # The folder the action should deploy.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release
