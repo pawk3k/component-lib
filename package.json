@@ -9,7 +9,8 @@
     "storybook": "start-storybook -p 6006",
     "create-component": "./create-component.sh",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=4ad24eb5d07b"
+    "chromatic": "npx chromatic --project-token=4ad24eb5d07b",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "react": "^18.0.0",
