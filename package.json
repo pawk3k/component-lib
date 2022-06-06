@@ -7,11 +7,12 @@
     "dev": "vite",
     "predeploy-storybook": "npm run build-storybook -o docs",
     "deploy-storybook": "gh-pages -d docs",
-    "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && build-storybook -o docs-build",
+    "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && storybook-to-ghpages --out docs-build --dry-run",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "create-component": "./create-component.sh",
     "semantic-release": "semantic-release",
+    "build-storybook:prod": "storybook-to-ghpages --out docs --dry-run",
     "static-storybook": "start-storybook -s docs-build -p 6008"
   },
   "dependencies": {
