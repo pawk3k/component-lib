@@ -10,6 +10,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
+    "outDir": "./lib/" /* Redirect output structure to the directory. */,
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
