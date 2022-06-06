@@ -1,0 +1,10 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { Wizard } from './Wizard';
+
+<Meta title="Wizard" component={Wizard} />
+
+# Wizard
+
+export const ManagedWizard = (args) => <Wizard {...args}></Wizard>;
+
+<Story name="Default"> { ManagedWizard.bind({}) }</Story>
