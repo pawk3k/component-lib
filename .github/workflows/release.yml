@@ -25,12 +25,11 @@ jobs:
         run: npm run build
       - name: Deploy storybook 🚀
         run: npm run build-storybook:prod
-        # uses: JamesIves/github-pages-deploy-action@v4.3.3
-        # with:
-        #   branch: master # The branch the action should deploy to.
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        #   folder: docs-build # The folder the action should deploy.
-        #   target-folder: docs # The folder the action should deploy to.
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          folder: docs-build # The folder the action should deploy.
 
 
       - name: Release
