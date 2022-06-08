@@ -26,8 +26,8 @@ interface ${component_name}Props {
 }
 
 export const $component_name = ({
-}: ${component_name}Props) => {
-
+}: ${component_name}Props):JSX.Element => {
+    return <></>
 };
 "
 
@@ -35,3 +35,6 @@ export const $component_name = ({
 echo -e "$storyText" > $folder/$component_name.stories.mdx
 
 echo -e "$componentText" > $folder/$component_name.tsx
+
+
+echo -e "export { $component_name } from './$component_name'" >> $folder/index.ts

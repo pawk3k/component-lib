@@ -10,7 +10,7 @@
     "build": "tsc && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly && storybook-to-ghpages --out docs-build --dry-run",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "create-component": "./create-component.sh",
+    "create-component": "./scripts/create-component.sh",
     "semantic-release": "semantic-release",
     "build-storybook": "build-storybook"
   },
